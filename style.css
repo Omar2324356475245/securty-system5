@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    background-color: rgb(36, 36, 36);
+background-image: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+background-blend-mode: multiply,multiply;;
+}
+
+/* Navbar */
+nav {
+   background-image: linear-gradient(to right , black , white);
+    /* Green color */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .logo img {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    /* Make text bold */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+    /* Orange color on hover */
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    /* Make text bold */
+    animation: fadeIn 2s ease-out;
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    /* Make text bold */
+    animation: fadeIn 2s ease-out 1s;
+    color: white;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.img1 {
+   
+    overflow: hidden;
+    height: 270px;
+    width: 330px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.img2 {
+    overflow: hidden;
+    height: 270px;
+    width: 330px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.img3 {
+    overflow: hidden;
+    height: 270px;
+    width: 330px;
+    border-radius: 10px;
+   
+    margin: 10px;
+}
+
+.hover {
+    transition: 0.5s;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+}
+
+/* Services Section */
+#services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.service {
+    text-align: center;
+    width: 25%;
+
+}
+
+.service h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.service p {
+    font-weight: bold;
+    /* Make text bold */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.form {
+    color: white;
+}
+
+.form1 {
+    color: white;
+}
+
+.form2 {
+    color: white;
+}
+
+.p {
+    color: white;
+}
+
+.p2 {
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #006400;
+    /* Green color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    /* Make text bold */
+}
+
+@media(max-width:750px) {
+    .parent {
+    grid-template-columns: auto;
+    
+    }
+    .parent img{
+        width: 200px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 0.2rem;
+    }
+
+    .hero p {
+        font-size: 0.2rem;
+    }
+
+    /* Adjusting the Navbar Layout */
+    .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img-fluid {
+        width: 100%;
+    }
+}
+
+/* Media Queries for Larger Screens (Desktop and above) */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 1rem;
+    }
+
+    .hero p {
+       font-size: 0em;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
